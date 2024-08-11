@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&family=Cormorant+Upright:wght@300;400;500;600;700&family=Grey+Qo&family=Whisper&display=swap');
+
+@font-face {
+    font-family: 'Cafetoria';
+    src: url('../fonts/Cafetoria.woff') format('woff');
+    font-weight: normal;
+	font-style: normal;
+	height: 100%;
+}
+
+body {
+    font-family: 'Arima', sans-serif;
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.font-cormorant {
+    font-family: 'Cormorant Upright', sans-serif;
+}
+
+.font-whisper {
+    font-family: 'Whisper', sans-serif;
+}
+
+.font-grey-qo {
+    font-family: 'Grey Qo', sans-serif;
+}
+
+.font-cafetoria {
+    font-family: 'Cafetoria', sans-serif;
+}
+
+.fade-enter {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-enter-active {
+    opacity: 1;
+}
+.fade-exit {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+}
+.fade-exit-active {
+    opacity: 0;
+}
+
+/* Slider container styles */
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-images {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-image {
+    min-width: 100%;
+}
